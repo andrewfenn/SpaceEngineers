@@ -18,7 +18,11 @@ using System.Collections.Generic;
 using Sandbox.Game.Gui;
 using Sandbox.Game.Entities.Character;
 using Sandbox.Engine.Physics;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Game.Multiplayer;
 using System.Linq;
 using Sandbox.Game.Components;

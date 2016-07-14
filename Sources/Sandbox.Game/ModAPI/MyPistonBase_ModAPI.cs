@@ -4,7 +4,11 @@ using System.Linq;
 using System.Text;
 
 using Sandbox.ModAPI.Ingame;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using VRage.Game.ModAPI;
 
 namespace Sandbox.Game.Entities.Blocks

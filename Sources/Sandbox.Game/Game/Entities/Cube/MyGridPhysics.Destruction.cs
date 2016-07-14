@@ -1,5 +1,9 @@
 ﻿#region Usings
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Common;
 using Sandbox.Common.ObjectBuilders;
 using Sandbox.Common.ObjectBuilders.Definitions;

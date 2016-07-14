@@ -13,7 +13,11 @@ using VRageMath;
 using System.Collections.Generic;
 using VRage.Game.Components;
 using Sandbox.Engine.Physics;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using VRage.Game.Entity;
 using VRage;
 using VRage.Game;

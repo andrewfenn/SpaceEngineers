@@ -7,7 +7,11 @@ using Sandbox.Common.ObjectBuilders;
 using VRageMath;
 using Sandbox.Engine.Utils;
 using Sandbox.Game.Entities.Cube;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Engine.Physics;
 using Sandbox.Game.Multiplayer;
 using Sandbox.Game.Gui;

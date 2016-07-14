@@ -10,7 +10,11 @@ using VRage.Utils;
 using VRageMath;
 using Sandbox.Game.Gui;
 using System.Collections.Generic;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Game.Multiplayer;
 using Sandbox.Game.Entities.Character;
 using Sandbox.Game.Entities.Cube;

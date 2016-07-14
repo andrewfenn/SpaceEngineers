@@ -7,7 +7,11 @@ using Sandbox.Game.Entities;
 using Sandbox.Game.GameSystems.Electricity;
 using VRageMath;
 using Sandbox.Game.Multiplayer;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using System.Collections.Generic;
 using Sandbox.Engine.Physics;
 using Sandbox.Game.World;

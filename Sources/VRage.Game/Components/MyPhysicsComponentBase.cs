@@ -3,7 +3,11 @@ using System.Diagnostics;
 using VRageMath;
 using VRage.Utils;
 using VRage.ModAPI;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using VRage.Game.ObjectBuilders.ComponentSystem;
 using VRage.Game.SessionComponents;
 

@@ -3,7 +3,11 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Common.ObjectBuilders;
 using Sandbox.Common.ObjectBuilders.Definitions;
 using Sandbox.Definitions;

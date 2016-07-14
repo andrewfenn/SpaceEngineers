@@ -10,7 +10,11 @@ using Sandbox.Game.Entities;
 using Sandbox.Engine.Models;
 using VRageRender;
 using System.Collections.Generic;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Engine.Physics;
 using System.Diagnostics;
 using Sandbox.Definitions;

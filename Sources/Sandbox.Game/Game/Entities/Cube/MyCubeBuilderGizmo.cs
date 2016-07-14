@@ -27,7 +27,11 @@ using VRageRender;
 using ModelId = System.Int32;
 using Sandbox.Game.GUI;
 using Sandbox.Engine.Physics;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using VRage.Game;
 using VRage.Game.Models;
 

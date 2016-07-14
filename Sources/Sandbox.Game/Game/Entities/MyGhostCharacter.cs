@@ -24,7 +24,11 @@ using VRage.OpenVRWrapper;
 using VRage.Utils;
 using VRageMath;
 using ObjectBuilders;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using VRage.Game.ModAPI.Interfaces;
 using Valve.VR;
 using Sandbox.Game.Screens.Helpers;

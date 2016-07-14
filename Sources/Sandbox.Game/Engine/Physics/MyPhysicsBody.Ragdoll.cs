@@ -14,7 +14,11 @@ using VRageRender;
 using Sandbox.AppCode.Game;
 using Sandbox.Game.Utils;
 using Sandbox.Engine.Models;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Graphics;
 using Sandbox.Common;
 using Sandbox.Game.World;

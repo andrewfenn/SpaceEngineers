@@ -1,4 +1,8 @@
-﻿using Havok;
+﻿#if USEHAVOK
+using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using System;
 using System.Collections.Generic;
 using System.Linq;

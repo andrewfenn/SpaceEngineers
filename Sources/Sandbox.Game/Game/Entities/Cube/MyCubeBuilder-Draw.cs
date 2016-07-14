@@ -17,7 +17,11 @@ using VRageMath;
 using VRageRender;
 using ModelId = System.Int32;
 using Sandbox.Engine.Physics;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Game.GameSystems.CoordinateSystem;
 using Sandbox.Game.Localization;
 using Sandbox.Graphics.GUI;

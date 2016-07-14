@@ -1,4 +1,8 @@
-﻿using Havok;
+﻿#if USEHAVOK
+using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Definitions;
 using Sandbox.Engine.Models;
 using Sandbox.Engine.Utils;

@@ -1,4 +1,8 @@
-﻿using Havok;
+﻿#if USEHAVOK
+using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using VRageMath;
 
 namespace Sandbox.Engine.Physics

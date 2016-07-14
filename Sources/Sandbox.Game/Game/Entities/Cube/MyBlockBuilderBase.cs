@@ -20,7 +20,11 @@ using VRage.Library.Utils;
 using VRage.Utils;
 using VRageMath;
 using Sandbox.Engine.Multiplayer;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using VRage.Game;
 using VRage.Game.Components;
 using VRage.Game.Components.Session;

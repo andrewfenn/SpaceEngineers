@@ -1,6 +1,10 @@
 ﻿#region Using
 
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 //using PhysX;
 //using PhysX.Cooking;
 //using PhysX.Extensions;

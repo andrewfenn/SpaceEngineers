@@ -13,7 +13,11 @@ using Sandbox.Game.Entities.Cube;
 using System.Diagnostics;
 using Sandbox.Common.ObjectBuilders.Definitions;
 using Sandbox.Engine.Physics;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using System.Linq;
 using Sandbox.Game.Weapons;
 using VRageRender;

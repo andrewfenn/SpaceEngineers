@@ -1,6 +1,10 @@
 ﻿
 using System;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Engine.Physics;
 using Sandbox.Engine.Utils;
 using Sandbox.Game.Utils;

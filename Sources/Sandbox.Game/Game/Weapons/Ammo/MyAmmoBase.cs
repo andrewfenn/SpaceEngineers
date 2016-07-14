@@ -6,7 +6,11 @@ using Sandbox.Engine.Physics;
 using Sandbox.Game.Entities;
 using Sandbox.Engine.Utils;
 using Sandbox.Game.Utils;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Common.ObjectBuilders;
 using Sandbox.Definitions;
 using Sandbox.Common.ObjectBuilders.Definitions;

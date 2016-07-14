@@ -1,5 +1,9 @@
 ﻿#region Using
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Common;
 using Sandbox.Definitions;
 using Sandbox.Engine.Physics;

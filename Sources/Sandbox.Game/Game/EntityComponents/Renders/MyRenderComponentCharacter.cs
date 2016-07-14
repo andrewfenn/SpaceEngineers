@@ -9,7 +9,11 @@ using Sandbox.Game.Weapons;
 using Sandbox.Graphics;
 using System;
 using System.Collections.Generic;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Engine.Physics;
 using Sandbox.Engine.Utils;
 using Sandbox.Engine.Voxels;

@@ -19,7 +19,11 @@ using VRage.Utils;
 using VRageMath;
 using Sandbox.Game.World;
 using System;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Definitions;
 using Sandbox.Engine.Physics;
 using Sandbox.Game.Entities.Debris;

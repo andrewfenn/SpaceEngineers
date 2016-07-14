@@ -4,7 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Common.ObjectBuilders;
 using Sandbox.Engine.Physics;
 using VRageMath;

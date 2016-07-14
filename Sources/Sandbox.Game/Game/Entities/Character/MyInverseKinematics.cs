@@ -5,7 +5,11 @@ using System.Text;
 using VRageMath;
 using Sandbox.Game.Entities.Character;
 using Sandbox.Engine.Utils;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Engine.Physics;
 using VRage.Animations;
 using VRage.Game.Entity;

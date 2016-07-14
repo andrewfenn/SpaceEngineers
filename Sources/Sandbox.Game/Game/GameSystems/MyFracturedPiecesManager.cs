@@ -6,7 +6,11 @@ using Sandbox.Game.Entities;
 using Sandbox.Game.GameSystems.StructuralIntegrity;
 using Sandbox.Game.World;
 using VRage;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using System.Diagnostics;
 using System;
 using VRage.Library.Utils;

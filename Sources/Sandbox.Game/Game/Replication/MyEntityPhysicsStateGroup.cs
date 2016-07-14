@@ -13,7 +13,11 @@ using VRage.Library.Collections;
 using VRage.Network;
 using VRageMath;
 using VRageMath.PackedVector;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using VRage.Game.Entity;
 
 namespace Sandbox.Game.Replication

@@ -15,7 +15,11 @@ using VRage.Game.Components;
 using Sandbox.Game.Entities.Character;
 using Sandbox.Common;
 using Sandbox.Engine.Models;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using Sandbox.Game.World;
 using System.Diagnostics;
 using VRage;

@@ -17,7 +17,11 @@ using VRageRender;
 using VRage;
 using Sandbox.Common.ObjectBuilders;
 using Sandbox.Engine.Physics;
+#if USEHAVOK
 using Havok;
+#elif USEBULLET
+using BulletSharp;
+#endif
 using VRage.Library.Utils;
 using VRage.FileSystem;
 using Sandbox.Game.World;
